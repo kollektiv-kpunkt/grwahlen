@@ -1,0 +1,16 @@
+:root {
+    --black: #232323;
+    --white: #f6f6f6;
+    --red120: #BA2C2F;
+    --red100: #E9373B;
+    --red80: #ED5F62;
+    --red30: #F9C3C5;
+    --red20: #FBD7D8;
+    --red10: #FDEBEC;
+    --blue: #BFD5E7;
+}
+
+html {
+    background-color: var(--white);
+    scroll-behavior: smooth;
+}

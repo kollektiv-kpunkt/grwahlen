@@ -1,0 +1,93 @@
+#kandi-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kandi {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.kandi img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.75s cubic-bezier(0.19, 1, 0.22, 1) transform;
+}
+
+.kandi:hover img {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+
+.kandi .title-container {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.title-container span {
+    font-family: 'CocoGothic', sans-serif;
+    font-weight: 900;
+    line-height: 1.01;
+    font-size: var(--titleSize);
+    display: block;
+    width: fit-content;
+    margin-right: 0;
+    margin-left: auto;
+    padding: 0.4em 0.4em 0.25em 0.4em;
+    color: var(--red100);
+    background-color: var(--blue);
+
+    --titleSize: 2rem;
+}
+
+.title-container span:nth-child(1) {
+    font-size: calc(1.5 * var(--titleSize));
+    background-color: var(--red100);
+    color: var(--white);
+    text-transform: uppercase;
+    padding-bottom: 0.1em
+}
+
+
+.kandi .bisher-neu {
+    color: var(--white);
+    font-family: 'CocoGothic', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 1.01;
+    padding: 0.4em 0.6em 0.25em 0.6em;
+    background-color: var(--red100);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1380px) {
+    .title-container span { --titleSize: 1.5rem }
+    .kandi .bisher-neu { font-size: 1rem; }
+}
+
+#kandi-container .kandi-aspect-ratio {
+    padding-bottom: 100%;
+}
+
+@media screen and (max-width: 980px) {
+    .kandi {width: 100%;}
+
+    #kandi-container .kandi-aspect-ratio {
+        padding-bottom: calc(3.25 / 4 * 100%);
+    }   
+}
+
+@media screen and (max-width: 480px) {
+    .title-container span { --titleSize: 1.25rem }
+}
+
+@media screen and (max-width: 360px) {
+    .title-container span { --titleSize: 1rem }
+}

@@ -1,0 +1,15 @@
+
+.section-title h1 {
+    text-align: center;
+    color: var(--red100);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: -0.2em;
+}
+
+@media screen and (max-width: 980px) {
+    .section-title h1 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}

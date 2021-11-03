@@ -1,0 +1,23 @@
+.lgcont {
+    max-width: 1728px;
+    width: 90%;
+    margin: auto;
+}
+
+.mdcont {
+    max-width: 1440px;
+    width: 75%;
+    margin: auto;
+}
+
+.smcont {
+    max-width: 793px;
+    width: 50%;
+    margin: auto;
+}
+
+@media screen and (max-width: 980px) {
+    .mdcont, .smcont{
+        width: 90%;
+    }
+}

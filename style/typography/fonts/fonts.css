@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'CocoGothic';
+    src: url('CocoGothic-Heavy.eot'); /* IE9 Compat Modes */
+    src: url('CocoGothic-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('CocoGothic-Heavy.woff') format('woff'), /* Modern Browsers */
+         url('CocoGothic-Heavy.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('CocoGothic-Heavy.svg#CocoGothic-Heavy') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 900;
+    font-display:swap;
+    text-rendering: optimizeLegibility;
+}
+

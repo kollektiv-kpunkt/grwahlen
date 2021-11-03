@@ -1,0 +1,11 @@
+#karte-container {
+    max-height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+#karte-legend {
+    text-align: center;
+    color: var(--red100);
+    margin-top: 1.5rem;
+}

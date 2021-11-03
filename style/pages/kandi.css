@@ -1,0 +1,196 @@
+#kandi-heroine {
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100vh - 98px);
+    background-color: var(--red20);
+}
+
+#kandi-heroine-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+#kandi-heroine-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 33%;
+}
+
+.bisher-neu {
+    font-family: "CocoGothic", sans-serif;
+    font-weight: 900;
+    line-height: 1.01;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 0.5em 0.7em 0.2em 0.7em;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1280px) {
+    .bisher-neu{
+        top: unset;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+#kandi-heroine-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+
+#kandi-heroine-content {
+    margin: auto 3rem;
+}
+
+#kandi-heroine-content h1 {
+    color: var(--red100);
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    line-height: 0.95;
+    margin-bottom: 0.75rem;
+}
+
+#kandi-heroine-content #kandi-quote {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.1;
+}
+
+#kandi-heroine-content #kandi-quote p::before {content: "«";}
+#kandi-heroine-content #kandi-quote p::after {content: "»";}
+
+#kandi-heroine-content #kandi-info {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--red100);
+}
+
+@media screen and (max-width: 1280px) {
+    #kandi-heroine {
+        height: unset;
+    }
+    #kandi-heroine-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #kandi-heroine-img img {
+        max-height: 66vh;
+        object-fit: contain;
+    }
+
+    #kandi-heroine-container {
+        width: 90%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin: auto;
+    }
+
+    #kandi-heroine-content {
+        margin: unset
+    }
+
+    #kandi-heroine-content h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Kandi Section */
+#kandi-section {margin-top: 4rem;}
+
+#kandi-section #row-1{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+#kandi-section #support-form, #kandi-section #kandi-video {
+    flex: 1;
+    max-width: 50%;
+}
+
+#kandi-section #kandi-video {position: relative;height: fit-content;}
+
+#kandi-section #kandi-video .video-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1380px) {
+    #kandi-section #support-form, #kandi-section #kandi-video {
+        flex: unset;
+        width: 100%;
+        max-width: 650px;
+    }
+    #kandi-section #support-form {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Themen */
+
+#kandi-themen {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.kandi-thema {
+    flex: 1;
+    cursor: pointer;
+}
+
+.thema-img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.thema-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.75s cubic-bezier(0.19, 1, 0.22, 1) transform;
+}
+
+.kandi-thema:hover .kandi-thema-bg {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+
+.kandi-thema div.button {
+    margin-top: 1rem;
+    font-size: 2rem;
+    width: 100%;
+    border: none;
+}
+
+@media screen and (max-width: 1380px) {
+    .kandi-thema {
+        flex: unset;
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .kandi-thema {
+        width: 100%;
+    }
+}

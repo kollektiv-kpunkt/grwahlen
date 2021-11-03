@@ -1,0 +1,64 @@
+#themen-outer-desk {display: flex;}
+#themen-outer-mob {display: none}
+
+@media screen and (max-width: 980px) {
+    #themen-outer-desk {display: none;}
+    #themen-outer-mob {display: block}
+}
+
+#themen-outer-desk .thema {
+    width: calc(100% / 3);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#themen-outer-desk .thema .thema-aspect-ratio {
+    padding-bottom: calc(1280 / 895 * 100%);
+}
+
+.thema img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.thema img.thema-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.75s cubic-bezier(0.19, 1, 0.22, 1) transform;
+}
+
+.thema:hover img.thema-bg {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+
+.thema .button {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    width: calc(100% - 4rem);
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1380px) {.thema .button { font-size: 1.75rem;} }
+
+.thema:hover .button {--btnbgcolor: var(--red120);}
+
+#themen-outer-mob .thema {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    /* margin-bottom: 1rem; */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#themen-outer-mob .thema:last-child {margin-bottom: 0;}
+
+#themen-outer-mob .thema .thema-aspect-ratio {
+    padding-bottom: calc(306 / 433 * 100%);
+}

@@ -1,0 +1,21 @@
+svg#wahlkreis-karte path.border {
+    fill: var(--red100);
+}
+
+svg#wahlkreis-karte path.number {
+    fill: var(--red100);
+}
+
+svg#wahlkreis-karte path.wahlkreis {
+    fill: transparent;
+    cursor: pointer;
+    transition: 0.15s linear fill;
+}
+
+svg#wahlkreis-karte path.wahlkreis.current_kreis {
+    fill: var(--red10);
+}
+
+svg#wahlkreis-karte path.wahlkreis:hover {
+    fill: var(--red10);
+}

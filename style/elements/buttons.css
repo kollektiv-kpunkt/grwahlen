@@ -1,0 +1,22 @@
+.button {
+    font-family: "CocoGothic", sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.01;
+    box-sizing: border-box;
+
+    color: var(--btncolor);
+    background-color: var(--btnbgcolor);
+
+    border: 0.1em solid var(--btncolor);
+
+    padding: 0.4em 1.5rem 0.2em 1.5rem;    
+    display: inline-block;
+
+    --btncolor: var(--white);
+    --btnbgcolor: var(--red100);
+    transition: 0.05s linear background-color;
+}
+
+.button:hover{--btnbgcolor: var(--red120);}
